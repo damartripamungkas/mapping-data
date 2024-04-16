@@ -1,6 +1,6 @@
 {
   "name": "mapping-data",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mapping data with map or object in the same interface and support types Key and value in typescript",
   "scripts": {
     "build": "tsup",
