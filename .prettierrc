@@ -1,0 +1,29 @@
+{
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "tabWidth": 2,
+        "printWidth": 400,
+        "semi": false
+      }
+    },
+    {
+      "files": "*.ts",
+      "options": {
+        "printWidth": 200,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": false,
+        "arrowParens": "always",
+        "bracketSameLine": false
+      }
+    }
+  ]
+}

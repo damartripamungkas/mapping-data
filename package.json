@@ -1,0 +1,41 @@
+{
+  "name": "mapping-data",
+  "version": "1.0.0",
+  "description": "Mapping data with map or object in the same interface and support types Key and value in typescript",
+  "scripts": {
+    "build": "tsup",
+    "test:node": "node ./test/test.js",
+    "publish:package": "npm run build && npm publish"
+  },
+  "homepage": "https://github.com/damartripamungkas/mapping-data",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damartripamungkas/mapping-data.git"
+  },
+  "keywords": [
+    "state",
+    "mapping",
+    "map",
+    "object",
+    "store",
+    "store-data",
+    "fast-store-data",
+    "mapping-data",
+    "data-mapping"
+  ],
+  "main": "./dist/src/index.js",
+  "module": "./dist/src/index.mjs",
+  "types": "./dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "damartripamungkas",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "eslint": "^9.0.0",
+    "logging-pretty": "^1.8.8",
+    "tsup": "^8.0.2"
+  }
+}
