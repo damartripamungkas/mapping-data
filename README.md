@@ -18,7 +18,7 @@
 
 ### 📖 Description :
 
-This package is made for those of you who want the key and value to have the same type of type, because using ``new Map()``` and defining the type to the map then only the key works while the value does not, I give an example below:
+This package is made for those of you who want the key and value to have the same type of type, because using `new Map()` and defining the type to the map then only the key works while the value does not, I give an example below:
 
 #### Using Map
 
@@ -43,6 +43,22 @@ type TypeStateAs = {
   human: boolean
 }
 const state = new MappingMap<keyof TypeStateAs, TypeStateAs[keyof TypeStateAs], TypeStateAs>()
+state.set(`name`, true) // this is will throw error in editor code, because value type `name` is string
+```
+
+### 🔮 Cheatsheet
+
+If you only need types for the `.set()` and `.get()` functions without having to use classes from the package you can import and define them as below :
+
+```typescript
+import type { MappingMap } from "mapping-data"
+
+type TypeStateAs = {
+  name: string
+  age: number
+  human: boolean
+}
+const state: MappingMap<keyof TypeStateAs, TypeStateAs[keyof TypeStateAs], TypeStateAs> = new Map() as any
 state.set(`name`, true) // this is will throw error in editor code, because value type `name` is string
 ```
 
